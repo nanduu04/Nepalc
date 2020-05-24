@@ -1,6 +1,8 @@
 import React, { useEffect, Fragment } from "react";
+import {BrowserRouter} from 'react-router-dom'
 import AOS from "aos";
 import $ from "jquery";
+
 
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -9,6 +11,7 @@ import Contact from "./components/Contact";
 
 import "aos/dist/aos.css";
 import "./assets/styles/main.scss";
+import { Form } from "react-bootstrap";
 
 const App = () => {
   useEffect(() => {
@@ -29,7 +32,9 @@ const App = () => {
   });
 
   return (
-    <Fragment>
+    <BrowserRouter >
+        {/* <Route path='/' component={Home} /> */}
+        <Fragment>
       <Header />
       <main>
         <Home />
@@ -37,6 +42,8 @@ const App = () => {
         <Contact />
       </main>
     </Fragment>
+    </BrowserRouter>
+    
   );
 };
 

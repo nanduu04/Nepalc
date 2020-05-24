@@ -74,6 +74,29 @@ const Text = styled.p`
   max-width: 350px;
 `;
 
+
+const JoinButton3 = styled.button`
+    font-size: 14px;
+    letter-spacing: 1.9px;
+    font-weight: 100;
+    margin:10px;
+    padding: 16px 1.5em;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+    border-radius: 2px;
+    user-select: none;
+    text-align: center;
+    border: 0;
+    &:hover {
+        background-color: #E53935;
+    }
+  
+`;
+
 const About = () => {
   const width = window.innerWidth;
   return (
@@ -98,12 +121,9 @@ const About = () => {
                       justifyContent: "center",
                       margin:"0 auto"
                   }} />
+                  <JoinButton3 column narrow>Toronto</JoinButton3>
 
-            <DropdownButton id="dropdown-item-button" title="Locations">
-              <Dropdown.Item as="button">Toronto</Dropdown.Item>
-              <Dropdown.Item as="button">Miluwakee</Dropdown.Item>
-              <Dropdown.Item as="button">Kathmandu</Dropdown.Item>
-            </DropdownButton>
+           
             </Box>
           </div>
         </div>

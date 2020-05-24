@@ -24,6 +24,7 @@ const Header = () => {
             href="#home"
             onClick={scrollTo("home")}
             aria-label="Logo"
+            
           >
             LogIn
           </Navbar.Brand>
