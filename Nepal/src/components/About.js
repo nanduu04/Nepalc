@@ -3,8 +3,8 @@ import React from "react";
 import styled from "styled-components";
 import Image from 'react-image-resizer';
 import yeo from './world.jpg'
+import {DropdownButton, Dropdown} from 'react-bootstrap'
 
-//import Demo from "./Icons/Demo";
 
 const Section = styled.section`
   /padding: 30px 0 225px;
@@ -83,32 +83,27 @@ const About = () => {
         
         <SectionTitle>  United Nepali is an online platform for Nepalese communities
                 worldwide! Join one of our groups or start
-                your own to share info, events, and collaborate.</SectionTitle>
-
+                your own to share info, events, and collaborate.</SectionTitle>    
         <div className="row">
           <div className="col-lg-4">
-
           </div>
           <div className="col-lg-4">
             <Box data-aos={width >= 1400 ? "fade-right" : "fade-up"}>
-              
-              
               <Image
-         img src={yeo} 
-         height={200}
-         width={100}
-         style = {{ 
-          display:"block",
-          justifyContent: "center",
-          margin:"0 auto"
-         }}
-         
-          
-        />
-              <BoxTitle>Toronto</BoxTitle>
-              <Text>
-                
-              </Text>
+                  img src={yeo} 
+                  height={230}
+                  width={100}
+                  style = {{ 
+                      display:"block",
+                      justifyContent: "center",
+                      margin:"0 auto"
+                  }} />
+
+            <DropdownButton id="dropdown-item-button" title="Locations">
+              <Dropdown.Item as="button">Toronto</Dropdown.Item>
+              <Dropdown.Item as="button">Miluwakee</Dropdown.Item>
+              <Dropdown.Item as="button">Kathmandu</Dropdown.Item>
+            </DropdownButton>
             </Box>
           </div>
         </div>
