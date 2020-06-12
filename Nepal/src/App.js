@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Groups from "./components/Groups";
 
 import "aos/dist/aos.css";
 import "./assets/styles/main.scss";
@@ -34,14 +35,15 @@ const App = () => {
   return (
     <BrowserRouter >
         {/* <Route path='/' component={Home} /> */}
-        <Fragment>
-      <Header />
-      <main>
-        <Home />
-        <About />
-        <Contact />
-      </main>
-    </Fragment>
+      {/* <Fragment> */}
+        <Header />
+        <main>
+          <Home />
+          <About />
+          <Groups />
+          <Contact />
+        </main>
+      {/* </Fragment> */}
     </BrowserRouter>
     
   );
