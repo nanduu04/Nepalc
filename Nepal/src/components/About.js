@@ -1,5 +1,4 @@
 import React from "react";
-
 import styled from "styled-components";
 import Image from 'react-image-resizer';
 import yeo from './world.jpg';
