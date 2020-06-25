@@ -1,15 +1,36 @@
 .post {
     background: #FFFFFF;
+    color: #115757;
     padding: 20px;
     margin: 10px 0 10px 0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-  }
-  
-  .post-form {
+}
+
+.content {
+    margin-left: 5px;
+}
+
+.label {
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    margin-bottom: auto;
+    padding: 0.25rem 0.5rem 0.25rem;
+    font-size: 0.6875rem;
+    background-color: #008CBA;
+    color: #FFFFFF;
+}
+
+.post-form {
     background: #90caf9 ;
     padding: 20px;
-  }
-  
-  .content {
+}
+
+.content {
     margin-left: 5px;
-  }
+}

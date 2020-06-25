@@ -14,6 +14,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import createBreakpoints from "@material-ui/core/styles/createBreakpoints";
+import styles from './Groups.module.css';
 
 const useStyles = makeStyles({
   table: {
@@ -152,10 +153,13 @@ const JoinButton3 = styled.button`
 
 
 const Post = (props) => {
-  // debugger;
+  debugger;
   return (
-    <div className="post">
-      <span>{props.value.content}</span>
+
+    <div className={styles.post}>
+      <img src={require("../assets/img/Nepal_flag.png")} alt="Nepal Flag" float="left"></img>
+      <span className={styles.label}>{props.category}</span>
+      <span className={styles.content}>{props.value.content}</span>
     </div>
   )
 }
@@ -168,7 +172,7 @@ const Feed = (props) => {
     ]
 
   const posts = posts_data.map((post, index) =>
-    <Post key={index} value={post} />
+    <Post key={index} value={post} category='LOL'/>
   );
 
   return (
